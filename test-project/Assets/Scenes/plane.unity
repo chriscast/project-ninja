@@ -136,7 +136,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1001 &154218821
+--- !u!1001 &479405037
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -522,7 +522,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 7e8d12f5647d24d459149f2cd473f972, type: 2}
-  m_PrefabInternal: {fileID: 154218821}
+  m_PrefabInternal: {fileID: 479405037}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2065416731}
@@ -541,7 +541,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 7e8d12f5647d24d459149f2cd473f972,
     type: 2}
-  m_PrefabInternal: {fileID: 154218821}
+  m_PrefabInternal: {fileID: 479405037}
   m_GameObject: {fileID: 2065416727}
   m_Enabled: 1
   m_CastShadows: 1
@@ -549,7 +549,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 8133489c32c123141a85bd43c5be702b, type: 2}
+  - {fileID: 2100000, guid: 83c75e1cdeae17249b86831cf13694a5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -560,7 +560,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6400000, guid: 7e8d12f5647d24d459149f2cd473f972,
     type: 2}
-  m_PrefabInternal: {fileID: 154218821}
+  m_PrefabInternal: {fileID: 479405037}
   m_GameObject: {fileID: 2065416727}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -574,14 +574,14 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 7e8d12f5647d24d459149f2cd473f972,
     type: 2}
-  m_PrefabInternal: {fileID: 154218821}
+  m_PrefabInternal: {fileID: 479405037}
   m_GameObject: {fileID: 2065416727}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2065416731
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 7e8d12f5647d24d459149f2cd473f972, type: 2}
-  m_PrefabInternal: {fileID: 154218821}
+  m_PrefabInternal: {fileID: 479405037}
   m_GameObject: {fileID: 2065416727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
