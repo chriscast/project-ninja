@@ -175,6 +175,14 @@ Prefab:
       propertyPath: m_Height
       value: 1.70000005
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: e3375ffdfcea55044a99b78f5e8c0874, type: 2}
+      propertyPath: field of view
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: e3375ffdfcea55044a99b78f5e8c0874, type: 2}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3375ffdfcea55044a99b78f5e8c0874, type: 2}
   m_RootGameObject: {fileID: 951445058}
@@ -348,7 +356,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 100
   m_Depth: 0
