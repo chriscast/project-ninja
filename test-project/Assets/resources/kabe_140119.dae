@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>Autodesk Mod Tool version 7.5.203.0 - Crosswalk 5.1</authoring_tool>
+		</contributor>
+		<created>2014-01-19T11:44:32Z</created>
+		<modified>2014-01-19T11:44:32Z</modified>
+		<revision>1.4.1</revision>
+		<unit meter="0.1" name="decimetre"></unit>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="wood_poll_jpg_img" format="bitmap" height="512" width="512" depth="32" name="wood_poll_jpg_img">
+			<init_from>file:///C:/test_hishita/Pictures/wood_poll.jpg</init_from>
+			<extra>
+				<technique profile="XSI">
+					<XSI_Image>
+						<xsi_param sid="FileName">"" </xsi_param>
+						<xsi_param sid="SizeX">512 </xsi_param>
+						<xsi_param sid="SizeY">512 </xsi_param>
+						<xsi_param sid="NumChannels">4 </xsi_param>
+						<xsi_param sid="BitsPerPixel">0 </xsi_param>
+						<xsi_param sid="CropMinX">0.000000 </xsi_param>
+						<xsi_param sid="CropMaxX">0.000000 </xsi_param>
+						<xsi_param sid="CropMinY">1.000000 </xsi_param>
+						<xsi_param sid="CropMaxY">1.000000 </xsi_param>
+						<xsi_param sid="FrameRate">0.000000 </xsi_param>
+						<xsi_param sid="NumberOfFrames">0 </xsi_param>
+						<xsi_param sid="FirstFrame">0 </xsi_param>
+						<xsi_param sid="LastFrame">0</xsi_param>
+					</XSI_Image>
+					<XSI_ImageFX>
+						<xsi_param sid="Hue">0.000000 </xsi_param>
+						<xsi_param sid="Gain">100.000000 </xsi_param>
+						<xsi_param sid="Saturation">100.000000 </xsi_param>
+						<xsi_param sid="Brightness">0.000000 </xsi_param>
+						<xsi_param sid="Radius">0.000000 </xsi_param>
+						<xsi_param sid="Amount">1.000000 </xsi_param>
+						<xsi_param sid="BlurAlpha">FALSE </xsi_param>
+						<xsi_param sid="Type">1 </xsi_param>
+						<xsi_param sid="ScaleX">0.250000 </xsi_param>
+						<xsi_param sid="ScaleY">0.250000 </xsi_param>
+						<xsi_param sid="FlipHorizontal">FALSE </xsi_param>
+						<xsi_param sid="FlipVertical">FALSE </xsi_param>
+						<xsi_param sid="RGBA2GS">FALSE </xsi_param>
+						<xsi_param sid="To16Bits">FALSE</xsi_param>
+					</XSI_ImageFX>
+					<XSI_ImageFX2>
+						<xsi_param sid="Exposure">0.000000 </xsi_param>
+						<xsi_param sid="DisplayGamma">2.200000 </xsi_param>
+						<xsi_param sid="DisplayGammaAffectsRendering">FALSE </xsi_param>
+						<xsi_param sid="RenderColorProfile">"Linear" </xsi_param>
+						<xsi_param sid="RenderGamma">2.200000 </xsi_param>
+						<xsi_param sid="ImageDefinitionType">1 </xsi_param>
+						<xsi_param sid="EnableMipMap">FALSE </xsi_param>
+						<xsi_param sid="MipMapScale">1.000000 </xsi_param>
+						<xsi_param sid="oglmaxsize">1024 </xsi_param>
+						<xsi_param sid="oglmipmap">FALSE </xsi_param>
+						<xsi_param sid="oglminfilter">9729 </xsi_param>
+						<xsi_param sid="oglmagfilter">9729 </xsi_param>
+						<xsi_param sid="FieldType">0 </xsi_param>
+						<xsi_param sid="SourceTrack">0</xsi_param>
+					</XSI_ImageFX2>
+					<XSI_TimeControl>
+						<xsi_param sid="in">0.000000 </xsi_param>
+						<xsi_param sid="out">0.000000 </xsi_param>
+						<xsi_param sid="startOffset">0.000000 </xsi_param>
+						<xsi_param sid="scale">1.000000</xsi_param>
+						<XSI_Extrapolation name="Before">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+						<XSI_Extrapolation name="After">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+					</XSI_TimeControl>
+				</technique>
+			</extra>
+		</image>
+		<image id="wall_psd_img" format="bitmap" height="512" width="512" depth="32" name="wall_psd_img">
+			<init_from>file:///C:/test_hishita/Pictures/wall.psd</init_from>
+			<extra>
+				<technique profile="XSI">
+					<XSI_Image>
+						<xsi_param sid="FileName">"" </xsi_param>
+						<xsi_param sid="SizeX">512 </xsi_param>
+						<xsi_param sid="SizeY">512 </xsi_param>
+						<xsi_param sid="NumChannels">4 </xsi_param>
+						<xsi_param sid="BitsPerPixel">0 </xsi_param>
+						<xsi_param sid="CropMinX">0.000000 </xsi_param>
+						<xsi_param sid="CropMaxX">0.000000 </xsi_param>
+						<xsi_param sid="CropMinY">1.000000 </xsi_param>
+						<xsi_param sid="CropMaxY">1.000000 </xsi_param>
+						<xsi_param sid="FrameRate">0.000000 </xsi_param>
+						<xsi_param sid="NumberOfFrames">0 </xsi_param>
+						<xsi_param sid="FirstFrame">0 </xsi_param>
+						<xsi_param sid="LastFrame">0</xsi_param>
+					</XSI_Image>
+					<XSI_ImageFX>
+						<xsi_param sid="Hue">0.000000 </xsi_param>
+						<xsi_param sid="Gain">100.000000 </xsi_param>
+						<xsi_param sid="Saturation">100.000000 </xsi_param>
+						<xsi_param sid="Brightness">0.000000 </xsi_param>
+						<xsi_param sid="Radius">0.000000 </xsi_param>
+						<xsi_param sid="Amount">1.000000 </xsi_param>
+						<xsi_param sid="BlurAlpha">FALSE </xsi_param>
+						<xsi_param sid="Type">1 </xsi_param>
+						<xsi_param sid="ScaleX">0.250000 </xsi_param>
+						<xsi_param sid="ScaleY">0.250000 </xsi_param>
+						<xsi_param sid="FlipHorizontal">FALSE </xsi_param>
+						<xsi_param sid="FlipVertical">FALSE </xsi_param>
+						<xsi_param sid="RGBA2GS">FALSE </xsi_param>
+						<xsi_param sid="To16Bits">FALSE</xsi_param>
+					</XSI_ImageFX>
+					<XSI_ImageFX2>
+						<xsi_param sid="Exposure">0.000000 </xsi_param>
+						<xsi_param sid="DisplayGamma">2.200000 </xsi_param>
+						<xsi_param sid="DisplayGammaAffectsRendering">FALSE </xsi_param>
+						<xsi_param sid="RenderColorProfile">"Linear" </xsi_param>
+						<xsi_param sid="RenderGamma">2.200000 </xsi_param>
+						<xsi_param sid="ImageDefinitionType">0 </xsi_param>
+						<xsi_param sid="EnableMipMap">FALSE </xsi_param>
+						<xsi_param sid="MipMapScale">1.000000 </xsi_param>
+						<xsi_param sid="oglmaxsize">1024 </xsi_param>
+						<xsi_param sid="oglmipmap">FALSE </xsi_param>
+						<xsi_param sid="oglminfilter">9729 </xsi_param>
+						<xsi_param sid="oglmagfilter">9729 </xsi_param>
+						<xsi_param sid="FieldType">0 </xsi_param>
+						<xsi_param sid="SourceTrack">0</xsi_param>
+					</XSI_ImageFX2>
+					<XSI_TimeControl>
+						<xsi_param sid="in">0.000000 </xsi_param>
+						<xsi_param sid="out">0.000000 </xsi_param>
+						<xsi_param sid="startOffset">0.000000 </xsi_param>
+						<xsi_param sid="scale">1.000000</xsi_param>
+						<XSI_Extrapolation name="Before">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+						<XSI_Extrapolation name="After">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+					</XSI_TimeControl>
+				</technique>
+			</extra>
+		</image>
+		<image id="WallpaperSeventies0055_1_thumblarge_jpg_img" format="bitmap" height="225" width="225" depth="32" name="WallpaperSeventies0055_1_thumblarge_jpg_img">
+			<init_from>file:///C:/test_hishita/Pictures/WallpaperSeventies0055_1_thumblarge.jpg</init_from>
+			<extra>
+				<technique profile="XSI">
+					<XSI_Image>
+						<xsi_param sid="FileName">"" </xsi_param>
+						<xsi_param sid="SizeX">225 </xsi_param>
+						<xsi_param sid="SizeY">225 </xsi_param>
+						<xsi_param sid="NumChannels">4 </xsi_param>
+						<xsi_param sid="BitsPerPixel">0 </xsi_param>
+						<xsi_param sid="CropMinX">0.000000 </xsi_param>
+						<xsi_param sid="CropMaxX">0.000000 </xsi_param>
+						<xsi_param sid="CropMinY">1.000000 </xsi_param>
+						<xsi_param sid="CropMaxY">1.000000 </xsi_param>
+						<xsi_param sid="FrameRate">0.000000 </xsi_param>
+						<xsi_param sid="NumberOfFrames">0 </xsi_param>
+						<xsi_param sid="FirstFrame">0 </xsi_param>
+						<xsi_param sid="LastFrame">0</xsi_param>
+					</XSI_Image>
+					<XSI_ImageFX>
+						<xsi_param sid="Hue">0.000000 </xsi_param>
+						<xsi_param sid="Gain">100.000000 </xsi_param>
+						<xsi_param sid="Saturation">100.000000 </xsi_param>
+						<xsi_param sid="Brightness">0.000000 </xsi_param>
+						<xsi_param sid="Radius">0.000000 </xsi_param>
+						<xsi_param sid="Amount">1.000000 </xsi_param>
+						<xsi_param sid="BlurAlpha">FALSE </xsi_param>
+						<xsi_param sid="Type">1 </xsi_param>
+						<xsi_param sid="ScaleX">0.568889 </xsi_param>
+						<xsi_param sid="ScaleY">0.568889 </xsi_param>
+						<xsi_param sid="FlipHorizontal">FALSE </xsi_param>
+						<xsi_param sid="FlipVertical">FALSE </xsi_param>
+						<xsi_param sid="RGBA2GS">FALSE </xsi_param>
+						<xsi_param sid="To16Bits">FALSE</xsi_param>
+					</XSI_ImageFX>
+					<XSI_ImageFX2>
+						<xsi_param sid="Exposure">0.000000 </xsi_param>
+						<xsi_param sid="DisplayGamma">2.200000 </xsi_param>
+						<xsi_param sid="DisplayGammaAffectsRendering">FALSE </xsi_param>
+						<xsi_param sid="RenderColorProfile">"Linear" </xsi_param>
+						<xsi_param sid="RenderGamma">2.200000 </xsi_param>
+						<xsi_param sid="ImageDefinitionType">1 </xsi_param>
+						<xsi_param sid="EnableMipMap">FALSE </xsi_param>
+						<xsi_param sid="MipMapScale">1.000000 </xsi_param>
+						<xsi_param sid="oglmaxsize">1024 </xsi_param>
+						<xsi_param sid="oglmipmap">FALSE </xsi_param>
+						<xsi_param sid="oglminfilter">9729 </xsi_param>
+						<xsi_param sid="oglmagfilter">9729 </xsi_param>
+						<xsi_param sid="FieldType">0 </xsi_param>
+						<xsi_param sid="SourceTrack">0</xsi_param>
+					</XSI_ImageFX2>
+					<XSI_TimeControl>
+						<xsi_param sid="in">0.000000 </xsi_param>
+						<xsi_param sid="out">0.000000 </xsi_param>
+						<xsi_param sid="startOffset">0.000000 </xsi_param>
+						<xsi_param sid="scale">1.000000</xsi_param>
+						<XSI_Extrapolation name="Before">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+						<XSI_Extrapolation name="After">
+							<xsi_param sid="type">"HOLD" </xsi_param>
+							<xsi_param sid="value">0.000000</xsi_param>
+						</XSI_Extrapolation>
+					</XSI_TimeControl>
+				</technique>
+			</extra>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="Scene_Material_fx" name="Scene_Material_fx">
+			<profile_COMMON>
+				<newparam sid="WallpaperSeventies0055_1_thumblarge_jpg_surface">
+					<surface type="2D">
+						<init_from>WallpaperSeventies0055_1_thumblarge_jpg_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="WallpaperSeventies0055_1_thumblarge_jpg_sampler">
+					<sampler2D>
+						<source>WallpaperSeventies0055_1_thumblarge_jpg_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 0.000000</color>
+						</emission>
+						<ambient>
+							<texture texture="WallpaperSeventies0055_1_thumblarge_jpg_sampler" texcoord="ambient_TEXCOORD"></texture>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.700000 0.700000 0.700000 0.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 0.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 0.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">1.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.213000 0.213000 0.213000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">1.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material6_fx" name="Material6_fx">
+			<profile_COMMON>
+				<newparam sid="wood_poll_jpg_surface">
+					<surface type="2D">
+						<init_from>wood_poll_jpg_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="wood_poll_jpg_sampler">
+					<sampler2D>
+						<source>wood_poll_jpg_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<lambert>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 0.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.300000 0.300000 0.300000 0.000000</color>
+						</ambient>
+						<diffuse>
+							<texture texture="wood_poll_jpg_sampler" texcoord="diffuse_TEXCOORD"></texture>
+						</diffuse>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 0.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">1.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">1.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1.000000</float>
+						</index_of_refraction>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material7_fx" name="Material7_fx">
+			<profile_COMMON>
+				<newparam sid="wall_psd_surface">
+					<surface type="2D">
+						<init_from>wall_psd_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="wall_psd_sampler">
+					<sampler2D>
+						<source>wall_psd_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<lambert>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 0.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.204000 0.204000 0.204000 0.000000</color>
+						</ambient>
+						<diffuse>
+							<texture texture="wall_psd_sampler" texcoord="diffuse_TEXCOORD"></texture>
+						</diffuse>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 0.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">1.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">1.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1.000000</float>
+						</index_of_refraction>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="Scene_Material" name="Scene_Material">
+			<instance_effect url="#Scene_Material_fx"></instance_effect>
+			<extra>
+				<technique profile="XSI">
+					<XSI_MaterialInfo></XSI_MaterialInfo>
+				</technique>
+			</extra>
+		</material>
+		<material id="Material6" name="Material6">
+			<instance_effect url="#Material6_fx"></instance_effect>
+			<extra>
+				<technique profile="XSI">
+					<XSI_MaterialInfo></XSI_MaterialInfo>
+				</technique>
+			</extra>
+		</material>
+		<material id="Material7" name="Material7">
+			<instance_effect url="#Material7_fx"></instance_effect>
+			<extra>
+				<technique profile="XSI">
+					<XSI_MaterialInfo></XSI_MaterialInfo>
+				</technique>
+			</extra>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0" name="geometries_0">
+			<mesh>
+				<source id="geometries_0-Pos">
+					<float_array id="geometries_0-Pos-array" count="60">
+						1.157542 7.700536 80.000000 
+						1.157542 7.700536 -80.000000 
+						1.157542 49.362785 -80.000000 
+						1.157542 49.362785 80.000000 
+						1.157542 -0.637214 80.000000 
+						1.157542 -0.637214 -80.000000 
+						1.157542 2.530923 -80.000000 
+						1.157542 2.530923 80.000000 
+						1.157542 6.485108 80.000000 
+						1.157542 6.485108 -80.000000 
+						1.157542 7.700536 -80.000000 
+						1.157542 7.700536 80.000000 
+						1.157542 49.362785 80.000000 
+						1.157542 49.362785 -80.000000 
+						1.157542 -0.637214 -80.000000 
+						1.157542 -0.637214 80.000000 
+						1.157542 2.530923 80.000000 
+						1.157542 2.530923 -80.000000 
+						1.157542 6.485108 -80.000000 
+						1.157542 6.485108 80.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="20" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="64">
+						0.000000 0.000000 
+						23.059343 0.000000 
+						23.059343 4.298828 
+						0.000000 4.298828 
+						0.001291 -0.330340 
+						15.649150 -0.330340 
+						15.649150 0.318491 
+						0.001291 0.318491 
+						15.649150 -0.168286 
+						0.001291 -0.168286 
+						15.649150 -0.168286 
+						0.001291 -0.168286 
+						0.001291 0.230049 
+						15.649150 0.230049 
+						0.001291 0.156790 
+						15.649150 0.156790 
+						0.000000 0.000000 
+						23.059343 0.000000 
+						23.059343 4.298828 
+						0.000000 4.298828 
+						0.001291 -0.330340 
+						15.649150 -0.330340 
+						15.649150 0.318491 
+						0.001291 0.318491 
+						15.649150 -0.168286 
+						0.001291 -0.168286 
+						15.649150 -0.168286 
+						0.001291 -0.168286 
+						0.001291 0.230049 
+						15.649150 0.230049 
+						0.001291 0.156790 
+						15.649150 0.156790
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="32" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Vertex_Color">
+					<float_array id="geometries_0-Vertex_Color-array" count="128">
+						0.200000 0.200000 0.200000 1.000000 
+						0.752941 0.752941 0.752941 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.752941 0.752941 0.752941 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000 
+						0.200000 0.200000 0.200000 1.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Vertex_Color-array" count="32" stride="4">
+							<param name="R" type="float"/>
+							<param name="G" type="float"/>
+							<param name="B" type="float"/>
+							<param name="A" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">
+					<input semantic="POSITION" source="#geometries_0-Pos"/>
+				</vertices>
+				<polylist count="6" material="Material6">
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="1"/>
+					<input semantic="COLOR" source="#geometries_0-Vertex_Color" offset="2"/>
+					<vcount>
+						4 4 4 4 
+						4 4
+					</vcount>
+					<p>
+						4 4 4 
+						5 5 5 
+						6 8 8 
+						7 9 9 
+						1 6 6 
+						0 7 7 
+						8 12 12 
+						9 13 13 
+						7 11 11 
+						6 10 10 
+						9 15 15 
+						8 14 14 
+						14 20 20 
+						15 21 21 
+						16 24 24 
+						17 25 25 
+						11 22 22 
+						10 23 23 
+						18 28 28 
+						19 29 29 
+						17 27 27 
+						16 26 26 
+						19 31 31 
+						18 30 30
+					</p>
+					<extra>
+						<technique profile="XSI">
+							<XSI_IndexList>
+								<xsi_param sid="NbAttributes">6 </xsi_param>
+								<xsi_param sid="attributeValue">1 2 3 5 6 7</xsi_param>
+							</XSI_IndexList>
+						</technique>
+					</extra>
+				</polylist>
+				<polylist count="2" material="Material7">
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="1"/>
+					<input semantic="COLOR" source="#geometries_0-Vertex_Color" offset="2"/>
+					<vcount>
+						4 4
+					</vcount>
+					<p>
+						0 0 0 
+						1 1 1 
+						2 2 2 
+						3 3 3 
+						10 16 16 
+						11 17 17 
+						12 18 18 
+						13 19 19
+					</p>
+					<extra>
+						<technique profile="XSI">
+							<XSI_IndexList>
+								<xsi_param sid="NbAttributes">2 </xsi_param>
+								<xsi_param sid="attributeValue">0 4</xsi_param>
+							</XSI_IndexList>
+						</technique>
+					</extra>
+				</polylist>
+			</mesh>
+			<extra>
+				<technique profile="XSI">
+					<XSI_VertexList>
+						<xsi_param sid="Attributes"> </xsi_param>
+						<xsi_param sid="nbAttributes">20 </xsi_param>
+						<xsi_param sid="position">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19</xsi_param>
+					</XSI_VertexList>
+				</technique>
+			</extra>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="visual_scenes_0">
+			<node id="wall_base" name="wall_base">
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+				<instance_geometry url="#geometries_0">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Scene_Material" target="#Scene_Material"></instance_material>
+							<instance_material symbol="Material6" target="#Material6">
+								<bind semantic="diffuse_TEXCOORD" target="geometries_0-Texture_Projection"></bind>
+							</instance_material>
+							<instance_material symbol="Material7" target="#Material7">
+								<bind semantic="diffuse_TEXCOORD" target="geometries_0-Texture_Projection"></bind>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+				<extra>
+					<technique profile="XSI">
+						<SI_Visibility>
+							<xsi_param sid="visibility">TRUE</xsi_param>
+						</SI_Visibility>
+						<XSI_Transform>
+							<xsi_param sid="rotorder">"XYZ" </xsi_param>
+							<xsi_param sid="siscaling">TRUE</xsi_param>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"posx" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"posy" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"posz" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"rotx" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"roty" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+							<XSI_Limit>
+								<xsi_param sid="parameter">"rotz" </xsi_param>
+								<xsi_param sid="minactive">FALSE </xsi_param>
+								<xsi_param sid="minlimit">0.000000 </xsi_param>
+								<xsi_param sid="maxactive">FALSE </xsi_param>
+								<xsi_param sid="maxlimit">0.000000</xsi_param>
+							</XSI_Limit>
+						</XSI_Transform>
+						<SI_GlobalMaterial>
+							<xsi_param sid="reference">"Scene_Material" </xsi_param>
+							<xsi_param sid="propagation">"NODE"</xsi_param>
+						</SI_GlobalMaterial>
+						<SI_Cluster name="Polygon5">
+							<xsi_param sid="objectName">"wall_base" </xsi_param>
+							<xsi_param sid="animMode">"AVERAGE" </xsi_param>
+							<xsi_param sid="clusterCenter">"" </xsi_param>
+							<xsi_param sid="nbSubElems">6 </xsi_param>
+							<xsi_param sid="subElems">1 2 3 5 6 7</xsi_param>
+							<XSI_ClusterInfo>
+								<xsi_param sid="ClusterType">"POLYGON"</xsi_param>
+							</XSI_ClusterInfo>
+						</SI_Cluster>
+						<SI_Cluster name="Polygon3">
+							<xsi_param sid="objectName">"wall_base" </xsi_param>
+							<xsi_param sid="animMode">"AVERAGE" </xsi_param>
+							<xsi_param sid="clusterCenter">"" </xsi_param>
+							<xsi_param sid="nbSubElems">2 </xsi_param>
+							<xsi_param sid="subElems">4 0</xsi_param>
+							<XSI_ClusterInfo>
+								<xsi_param sid="ClusterType">"POLYGON"</xsi_param>
+							</XSI_ClusterInfo>
+						</SI_Cluster>
+					</technique>
+				</extra>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+	<extra>
+		<technique profile="XSI">
+			<SI_Scene>
+				<xsi_param sid="timing">"SECONDS" </xsi_param>
+				<xsi_param sid="start">1.000000 </xsi_param>
+				<xsi_param sid="end">100.000000 </xsi_param>
+				<xsi_param sid="frameRate">29.970030</xsi_param>
+			</SI_Scene>
+			<SI_Angle>
+				<xsi_param sid="type">0</xsi_param>
+			</SI_Angle>
+			<SI_Ambience>
+				<xsi_param sid="red">0.244000 </xsi_param>
+				<xsi_param sid="green">0.244000 </xsi_param>
+				<xsi_param sid="blue">0.244000</xsi_param>
+			</SI_Ambience>
+			<SI_CoordinateSystem>
+				<xsi_param sid="handRotation">1 </xsi_param>
+				<xsi_param sid="uAxis">0 </xsi_param>
+				<xsi_param sid="vAxis">1 </xsi_param>
+				<xsi_param sid="xAxis">0 </xsi_param>
+				<xsi_param sid="yAxis">2 </xsi_param>
+				<xsi_param sid="zAxis">5</xsi_param>
+			</SI_CoordinateSystem>
+			<XSI_PolygonList>
+				<xsi_param sid="Attributes"> </xsi_param>
+				<xsi_param sid="Material">"" </xsi_param>
+				<xsi_param sid="NbPolynodes">0 </xsi_param>
+				<xsi_param sid="NbPolygons">0 </xsi_param>
+				<xsi_param sid="polygoneNodeCounts">4 4 4 4 4 4 </xsi_param>
+				<xsi_param sid="vertexIndices">4 5 6 7 1 0 8 9 7 6 9 8 14 15 16 17 11 10 18 19 17 16 19 18 </xsi_param>
+				<xsi_param sid="Texture_Projection">4 5 8 9 6 7 12 13 11 10 15 14 20 21 24 25 22 23 28 29 27 26 31 30 </xsi_param>
+				<xsi_param sid="Vertex_Color">4 5 8 9 6 7 12 13 11 10 15 14 20 21 24 25 22 23 28 29 27 26 31 30</xsi_param>
+			</XSI_PolygonList>
+			<XSI_PolygonList>
+				<xsi_param sid="Attributes"> </xsi_param>
+				<xsi_param sid="Material">"" </xsi_param>
+				<xsi_param sid="NbPolynodes">0 </xsi_param>
+				<xsi_param sid="NbPolygons">0 </xsi_param>
+				<xsi_param sid="polygoneNodeCounts">4 4 </xsi_param>
+				<xsi_param sid="vertexIndices">0 1 2 3 10 11 12 13 </xsi_param>
+				<xsi_param sid="Texture_Projection">0 1 2 3 16 17 18 19 </xsi_param>
+				<xsi_param sid="Vertex_Color">0 1 2 3 16 17 18 19</xsi_param>
+			</XSI_PolygonList>
+		</technique>
+	</extra>
+</COLLADA>
