@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Respawn : MonoBehaviour {
+public class Respawn : MonoBehaviour
+{
+	public Transform _respawnPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +14,7 @@ public class Respawn : MonoBehaviour {
 	void Update () {
 		if(transform.localPosition.y < -10f)
 		{
-			transform.localPosition = new Vector3(0f, 10f, 0f);
+			transform.localPosition = _respawnPoint.position;
 		}
 	}
 }
