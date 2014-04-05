@@ -25,6 +25,4 @@ MonoBehaviour:
     objectVariables: []
     materialVariables: []
     textureVariables: []
-  events:
-  - LADDER_BOTTOM
-  - LADDER_TOP
+  events: []
