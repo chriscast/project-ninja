@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: camera_vertical_rotation
+  m_EditorClassIdentifier: 
+  category: General
+  fsm:
+    usedInTemplate: {fileID: 11400000}
+    name: FSM
+    startState: Default
+    states:
+    - name: Default
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.TransformPoint
+        - HutongGames.PlayMaker.Actions.SetPosition
+        - HutongGames.PlayMaker.Actions.GetAxis
+        - HutongGames.PlayMaker.Actions.GetTimeInfo
+        - HutongGames.PlayMaker.Actions.FloatOperator
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.FloatClamp
+        - HutongGames.PlayMaker.Actions.ConvertBoolToFloat
+        - HutongGames.PlayMaker.Actions.FloatOperator
+        - HutongGames.PlayMaker.Actions.SetRotation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101010101
+        actionIsOpen: 0000000000000000000000
+        actionStartIndex: 0000000003000000070000000f00000013000000160000001b0000001f00000023000000280000002d000000
+        actionHashCodes: 79fc1ded4318034f8b80e9a59ee0ff19e371af8be075084022e8952201546a383fb456dae07508405d0b71a4
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 100144, guid: 2b73761112abb1c48b6abac6458486f5, type: 2}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Mouse Y
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00803b44014d6f7573652053656e736974697669747900803b44000000000000cdccccbd8fc2753c014c6f63616c204f66667365740000000000000000000000000145796520506f736974696f6e010000000000000000000000000145796520506f736974696f6e00000000010000000001000000000100000000010100803b44014d6f7573652053656e736974697669747900000000014d6f75736520566572746963616c0100000000000000000144656c74612054696d650100000000014d6f75736520566572746963616c000000000144656c74612054696d650200000000000000014d6f75736520566572746963616c010000000001566572746963616c20416e676c6500000000014d6f75736520566572746963616c01000000000001566572746963616c20416e676c65000020c2000000704200010001496e7665727420566572746963616c204178697300000000015369676e000080bf000000803f00010000000001566572746963616c20416e676c6500000000015369676e02000000000000000141637475616c20566572746963616c20416e676c6501000000000000000000000000000000000100000000000000000000000001000000000141637475616c20566572746963616c20416e676c6500000000010000000000000000000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f00000001000000140000001c0000001c00000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000120000000f0000000f00000001000000070000000f000000010000000f0000000f000000070000000f000000010000000f0000000f00000001000000010000000f0000000f0000000f00000001000000110000000f0000000f0000000f000000010000000f0000000f000000070000000f0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramName:
+        - floatVariable
+        - floatValue
+        - everyFrame
+        - gameObject
+        - localPosition
+        - storeResult
+        - everyFrame
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - lateUpdate
+        - axisName
+        - multiplier
+        - store
+        - everyFrame
+        - getInfo
+        - storeValue
+        - everyFrame
+        - float1
+        - float2
+        - operation
+        - storeResult
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - floatVariable
+        - minValue
+        - maxValue
+        - everyFrame
+        - boolVariable
+        - floatVariable
+        - falseValue
+        - trueValue
+        - everyFrame
+        - float1
+        - float2
+        - operation
+        - storeResult
+        - everyFrame
+        - gameObject
+        - quaternion
+        - vector
+        - xAngle
+        - yAngle
+        - zAngle
+        - space
+        - everyFrame
+        - lateUpdate
+        paramDataPos: 00000000160000001b000000000000001c000000350000004e000000010000004f000000680000006d00000072000000770000007b0000007c000000000000007d00000093000000a6000000a7000000ab000000ba000000bb000000ce000000dd000000e1000000f4000000f5000000080100001b0100001c0100001d01000030010000350100003a0100003b010000510100005a0100005f01000064010000650100007801000081010000850100009f01000002000000a0010000b1010000be010000d8010000dd010000e2010000e6010000e7010000
+        paramByteDataSize: 16000000050000000100000000000000190000001900000001000000000000001900000005000000050000000500000004000000010000000100000000000000160000001300000001000000040000000f00000001000000130000000f000000040000001300000001000000130000001300000001000000010000001300000005000000050000000100000016000000090000000500000005000000010000001300000009000000040000001a0000000100000000000000110000000d0000001a0000000500000005000000040000000100000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Actual Vertical Angle
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Delta Time
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Mouse Sensitivity
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 750
+      - useVariable: 1
+        name: Mouse Vertical
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Sign
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Vertical Angle
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Invert Vertical Axis
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Eye Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      - useVariable: 1
+        name: Local Offset
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {x: 0, y: -.100000001, z: .0149999997}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
