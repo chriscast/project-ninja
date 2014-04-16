@@ -4381,7 +4381,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 62.640625
-        y: 127.039062
+        y: 111.039062
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4474,22 +4474,14 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 265.992188
-        y: 251
+        x: 215.992188
+        y: 314
         width: 116
         height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
-      - fsmEvent:
-          name: ONCLIMB
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Climb
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
       - fsmEvent:
           name: PHOTOGRAPH
           isSystemEvent: 0
@@ -4506,6 +4498,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: CLIMB
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: Climb Test
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFloatValue
@@ -4515,10 +4515,12 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetAxis
         - HutongGames.PlayMaker.Actions.GetMouseButtonDown
         - HutongGames.PlayMaker.Actions.GetAxisVector
+        - HutongGames.PlayMaker.Actions.GetButtonUp
         - HutongGames.PlayMaker.Actions.FloatOperator
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.Rotate
         - HutongGames.PlayMaker.Actions.SampleCurve
+        - HutongGames.PlayMaker.Actions.ConvertBoolToFloat
         - HutongGames.PlayMaker.Actions.SetAnimatorFloat
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.ControllerSimpleMove
@@ -4539,10 +4541,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101010101010101
-        actionIsOpen: 000000000000000000000000000000
-        actionStartIndex: 00000000030000000b0000000e0000001100000015000000180000001f000000240000002800000032000000360000003b0000003f00000043000000
-        actionHashCodes: 79fc1ded69574eb0e371af8bb30867829ee0ff192d8b867b04a95048e075084022e895221d4debbbd8c3242c7cf39a5684729c66097bde4de0558823
+        - 
+        - 
+        actionEnabled: 0101010101010101010101010101010101
+        actionIsOpen: 0000000000000000000000000100000000
+        actionStartIndex: 00000000030000000b0000000e0000001100000015000000180000001f00000022000000270000002b00000035000000390000003e00000043000000470000004b000000
+        actionHashCodes: 79fc1ded69574eb0e371af8bb30867829ee0ff192d8b867b04a95048b3086782e075084022e895221d4debbbd8c3242c3fb456da7cf39a5684729c66097bde4de0558823
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -4649,6 +4653,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Jump
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: Speed
         - useVariable: 0
           name: 
@@ -4664,12 +4674,12 @@ MonoBehaviour:
           value: Ladder Bottom
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00803b44014d6f7573652053656e7369746976697479205800803b44000000000000010000000001000034420000000000010000000000000000000000000101000000000000000000000144656c74612054696d650143524f554348000100803b44014d6f7573652053656e7369746976697479205800000000014d6f7573652058010100000050484f544f475241504800010000803f0000000000000000000000000000000000014b657920496e70757400000000014b657920496e707574204d61676e697475646500000000014d6f7573652058000000000144656c74612054696d650200000000000000014d6f7573652058010000000001526f746174696f6e20416e676c65205800000000014d6f7573652058010000000000000000000000000001000000000000000000014d6f7573652058000000000001000000000100000000000001446173680000000001446173680100000000014b657920496e707574204d61676e6974756465000000000001000001000000000000000000000000014b657920496e707574cdcccc3e01537065656400000000000000004f4e434c494d42
+        byteData: 00803b44014d6f7573652053656e7369746976697479205800803b44000000000000010000000001000034420000000000010000000000000000000000000101000000000000000000000144656c74612054696d650143524f554348000100803b44014d6f7573652053656e7369746976697479205800000000014d6f7573652058010100000050484f544f475241504800010000803f0000000000000000000000000000000000014b657920496e70757400000000014b657920496e707574204d61676e6974756465434c494d4200014a756d7020427574746f6e2052656c656173656400000000014d6f7573652058000000000144656c74612054696d650200000000000000014d6f7573652058010000000001526f746174696f6e20416e676c65205800000000014d6f7573652058010000000000000000000000000001000000000000000000014d6f7573652058000000000001000000000100000000000001446173680000000001446173680100014a756d7020427574746f6e2052656c656173656400000000014a756d7020566563746f7200000000000000803f000100000000014b657920496e707574204d61676e6974756465000000000001000001000000000000000000000000014b657920496e707574cdcccc3e0153706565640000000001000000434c494d42
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000140000000f0000000f0000000f0000000f0000001c0000001100000001000000070000000f00000001000000120000001700000011000000120000000f0000000f0000000100000007000000170000001100000012000000120000000f00000007000000130000001c0000000f0000000f0000000f000000070000000f000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000000100000001000000160000000f0000000f0000000100000014000000120000000f0000000f0000000100000014000000120000001100000001000000140000001c0000000f0000000700000007000000120000001700000013000000
+        paramDataType: 0f0000000f00000001000000140000000f0000000f0000000f0000000f0000001c0000001100000001000000070000000f00000001000000120000001700000011000000120000000f0000000f0000000100000007000000170000001100000012000000120000000f00000007000000130000001c0000000f0000001200000017000000110000000f0000000f000000070000000f000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000000100000001000000160000000f0000000f00000001000000110000000f0000000f0000000f0000000100000014000000120000000f0000000f0000000100000014000000120000001100000001000000140000001c0000000f0000000700000007000000120000001700000013000000
         paramName:
         - floatVariable
         - floatValue
@@ -4702,6 +4712,9 @@ MonoBehaviour:
         - relativeTo
         - storeVector
         - storeMagnitude
+        - buttonName
+        - sendEvent
+        - storeResult
         - float1
         - float2
         - operation
@@ -4725,6 +4738,11 @@ MonoBehaviour:
         - sampleAt
         - storeValue
         - everyFrame
+        - boolVariable
+        - floatVariable
+        - falseValue
+        - trueValue
+        - everyFrame
         - gameObject
         - parameter
         - Value
@@ -4742,17 +4760,17 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 00000000180000001d000000000000001e00000023000000280000002d000000320000003f0000004100000042000000460000005500000000000000560000005c000000010000005e000000760000008200000083000000870000009100000002000000030000009300000098000000000000009c000000b2000000ca000000d6000000e5000000e9000000f5000000f60000000b01000017010000180100000100000019010000260100002b010000370100003c0100004001000041010000420100004301000000000000440100004d010000560100000200000004000000570100006f010000740100000300000005000000750100007701000004000000780100008e010000980100009c01000006000000a001000001000000
-        paramByteDataSize: 18000000050000000100000000000000050000000500000005000000050000000d0000000200000001000000040000000f0000000100000000000000060000000200000000000000180000000c00000001000000040000000a00000002000000000000000000000005000000040000000000000016000000180000000c0000000f000000040000000c00000001000000150000000c0000000100000001000000000000000d000000050000000c0000000500000004000000010000000100000001000000010000000000000009000000090000000100000000000000000000001800000005000000010000000000000000000000020000000100000000000000160000000a0000000400000004000000000000000700000000000000
+        paramDataPos: 00000000180000001d000000000000001e00000023000000280000002d000000320000003f0000004100000042000000460000005500000000000000560000005c000000010000005e000000760000008200000083000000870000009100000002000000030000009300000098000000000000009c000000b200000004000000ca000000cf000000e5000000f1000000000100000401000010010000110100002601000032010000330100000100000034010000410100004601000052010000570100005b0100005c0100005d0100005e010000000000005f01000068010000710100007201000088010000980100009d010000a20100000200000005000000a3010000bb010000c00100000300000006000000c1010000c301000004000000c4010000da010000e4010000e801000007000000ec01000001000000
+        paramByteDataSize: 18000000050000000100000000000000050000000500000005000000050000000d0000000200000001000000040000000f0000000100000000000000060000000200000000000000180000000c00000001000000040000000a00000002000000000000000000000005000000040000000000000016000000180000000000000005000000160000000c0000000f000000040000000c00000001000000150000000c0000000100000001000000000000000d000000050000000c00000005000000040000000100000001000000010000000100000000000000090000000900000001000000160000001000000005000000050000000100000000000000000000001800000005000000010000000000000000000000020000000100000000000000160000000a0000000400000004000000000000000500000000000000
     - name: Climb
       description: Climbing wall.
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 400.398438
-        y: 179.640625
+        x: 594.398438
+        y: 142.640625
         width: 112
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -4765,20 +4783,29 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: LAND
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Land Test
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.TransformDirection
+        - HutongGames.PlayMaker.Actions.SetAnimatorFloat
+        - HutongGames.PlayMaker.Actions.GetParent
         - HutongGames.PlayMaker.Actions.GetFsmVector3
         - HutongGames.PlayMaker.Actions.Vector3Operator
         - HutongGames.PlayMaker.Actions.SetVector3Value
         - HutongGames.PlayMaker.Actions.Vector3Invert
         - HutongGames.PlayMaker.Actions.ControllerSettings
-        - HutongGames.PlayMaker.Actions.Vector3RotateTowards
+        - HutongGames.PlayMaker.Actions.SmoothLookAtDirection
         - HutongGames.PlayMaker.Actions.GetAxis
         - HutongGames.PlayMaker.Actions.SetVector3XYZ
         - HutongGames.PlayMaker.Actions.ControllerMove
         - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.GetRotation
+        - HutongGames.PlayMaker.Actions.TriggerEvent
         customNames:
         - 
         - 
@@ -4792,14 +4819,27 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101010101
-        actionIsOpen: 010000000000010001010001
-        actionStartIndex: 0000000004000000090000000f00000012000000140000001c00000020000000240000002a0000002e00000032000000
-        actionHashCodes: 4318034fa7f99b501071e8a9610827fde5d54d7069574eb008c86d7d9ee0ff19f922f9b0cdd8fa00e0558823f4920b95
+        - 
+        actionEnabled: 01010101010101010101010101
+        actionIsOpen: 01000000000000000000000001
+        actionStartIndex: 0000000005000000070000000c0000001200000015000000170000001f000000260000002a000000300000003400000038000000
+        actionHashCodes: 7cf39a56837b830ba7f99b501071e8a9610827fde5d54d7069574eb00d93fb1a9ee0ff19f922f9b0cdd8fa00e0558823e0558823
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
+          name: Climbable Object
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
           name: Ladder Top
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -4819,6 +4859,14 @@ MonoBehaviour:
             name: Ladder Bottom
             tooltip: 
             showInInspector: 1
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Climbable Object
+            tooltip: 
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         - ownerOption: 0
@@ -4857,6 +4905,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Speed
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 
         - useVariable: 0
           name: 
@@ -4876,19 +4930,28 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Ladder Top
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Ladder Bottom
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000803f0000000000000000000000000001466f7761726420446972656374696f6e0000000000000000000000000001436f6e74616374204e6f726d616c0000000000000000000000000001436f6e74616374204e6f726d616c000000000000803f00000000000100000000000000000000000000000001557020566563746f7200000000010000000000000000000000000001496e766572736564204e6f726d616c00000000000000000000000001436f6e74616374204e6f726d616c0000000000000000000000000001496e766572736564204e6f726d616c00000000000100000000010000b4420000000000010000000000000000000000000101000000000000000000000000000001466f7761726420446972656374696f6e00000000000000000000000001496e766572736564204e6f726d616c0000b443000000803f009a99993e000000000001566572746963616c20496e70757401000000000000000000000000014b657920496e7075740000000000000000000000000100000000000000000001566572746963616c20496e707574000000000001000000000000000000000000014b657920496e707574000000000100000000004c41444445525f544f500000000000000000000000000000000001000000000000000000000000010000000001000000000100000000010000000000
+        byteData: 000000000000000000000100000000000000000000000001436f6e74616374204e6f726d616c0000000000000000000000000001436f6e74616374204e6f726d616c000000000000803f000000000001000000000000000000803f0000000001557020566563746f7200000000010000000000000000000000000001496e766572736564204e6f726d616c00000000000000000000000001436f6e74616374204e6f726d616c0000000000000000000000000001496e766572736564204e6f726d616c00000000000100000000010000b4420000000000010000000000000000000000000101000000000000000000000000000001496e766572736564204e6f726d616ccdcccc3d00000000000000803f000000000001000000a04000019a99993e000000000001566572746963616c20496e70757401000000000000000000000000014b657920496e7075740000000000000000000000000100000000000000000001566572746963616c20496e707574000000000001000000000000000000000000014b657920496e707574000000000100000000004c41444445525f544f50000000004c414e44
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000001c000000010000001400000012000000120000001c000000010000001c0000001c000000070000001c0000000f000000010000001c0000001c000000010000001c00000001000000140000000f0000000f0000000f0000000f0000001c00000011000000010000001c0000001c0000000f0000000f000000120000000f0000000f000000010000001c0000001c0000000f0000000f0000000f00000001000000140000001c00000007000000110000000700000012000000170000001300000014000000230000001c0000000f0000000f0000000f0000000700000001000000
+        paramDataType: 14000000120000000f0000000f0000000100000014000000130000001400000012000000120000001c000000010000001c0000001c000000070000001c0000000f000000010000001c0000001c000000010000001c00000001000000140000000f0000000f0000000f0000000f0000001c0000001100000001000000140000001c0000000f0000001c000000110000000f00000001000000120000000f0000000f000000010000001c0000001c0000000f0000000f0000000f00000001000000140000001c00000007000000110000000700000012000000170000001300000007000000120000001700000013000000
         paramName:
         - gameObject
-        - localDirection
-        - storeResult
+        - parameter
+        - Value
+        - dampTime
         - everyFrame
+        - gameObject
+        - storeResult
         - gameObject
         - fsmName
         - variableName
@@ -4913,10 +4976,13 @@ MonoBehaviour:
         - center
         - detectCollisions
         - everyFrame
-        - currentDirection
+        - gameObject
         - targetDirection
-        - rotateSpeed
-        - maxMagnitude
+        - minMagnitude
+        - upVector
+        - keepVertical
+        - speed
+        - lateUpdate
         - axisName
         - multiplier
         - store
@@ -4935,23 +5001,19 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        - gameObject
-        - quaternion
-        - vector
-        - xAngle
-        - yAngle
-        - zAngle
-        - space
-        - everyFrame
-        paramDataPos: 00000000000000000d0000002a0000000100000000000000010000002b0000004600000047000000620000006f00000073000000890000008e0000008f000000ab000000c6000000c7000000e300000002000000e4000000e9000000ee000000f3000000f8000000050100000701000008010000250100004101000046010000020000004b0100005001000063010000640100007a010000870100008c0100009f010000a401000003000000a5010000bb010000bf010000c101000003000000c50100000000000004000000cf010000e0010000ed010000f2010000f7010000fc01000000020000
-        paramByteDataSize: 000000000d0000001d000000010000000000000000000000000000001b000000010000001b0000000d000000040000001600000005000000010000001c0000001b000000010000001c0000000100000000000000050000000500000005000000050000000d00000002000000010000001d0000001c000000050000000500000000000000050000001300000001000000160000000d000000050000001300000005000000010000000000000016000000040000000200000004000000000000000a0000000000000000000000110000000d0000000500000005000000050000000400000001000000
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 000000000000000000000000050000000a00000001000000000000000200000001000000020000000b0000002600000027000000420000004f00000053000000690000006e0000006f0000008b000000a6000000a7000000c300000003000000c4000000c9000000ce000000d3000000d8000000e5000000e700000004000000e8000000040100000901000016010000180100001d010000030000001e0100002301000036010000370100004d0100005a0100005f010000720100007701000005000000780100008e0100009201000094010000040000009801000001000000a201000005000000a601000002000000
+        paramByteDataSize: 000000000000000005000000050000000100000000000000000000000000000000000000000000001b000000010000001b0000000d000000040000001600000005000000010000001c0000001b000000010000001c0000000100000000000000050000000500000005000000050000000d0000000200000001000000000000001c000000050000000d00000002000000050000000100000000000000050000001300000001000000160000000d000000050000001300000005000000010000000000000016000000040000000200000004000000000000000a0000000000000004000000000000000400000000000000
     - name: Reached Top
       description: Reached top of ladder.
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 564.15625
-        y: 115
+        x: 671.15625
+        y: 290
         width: 136
         height: 32
       isBreakpoint: 0
@@ -5088,7 +5150,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 81
-        y: 449
+        y: 433
         width: 100
         height: 16
       isBreakpoint: 0
@@ -5128,8 +5190,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 468
-        y: 347
+        x: 469
+        y: 410
         width: 113
         height: 32
       isBreakpoint: 0
@@ -5259,7 +5321,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 67
-        y: 353
+        y: 337
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5333,17 +5395,176 @@ MonoBehaviour:
         - storeResult
         paramDataPos: 0000000000000000000000000200000001000000030000000b000000
         paramByteDataSize: 00000000000000000200000001000000000000000800000002000000
+    - name: Land Test
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 300
+        y: 153
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Climb
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: LAND
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Ground
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ControllerIsGrounded
+        - HutongGames.PlayMaker.Actions.GetAxis
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000009000000
+        actionHashCodes: f952c6f29ee0ff1953489ed1
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vertical
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 46494e4953484544000149732047726f756e646564000000803f000000000001566572746963616c20496e707574000000000001566572746963616c20496e707574000080bf0000000000004c414e444c414e4446494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000017000000170000001100000001000000120000000f0000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - trueEvent
+        - falseEvent
+        - storeResult
+        - everyFrame
+        - axisName
+        - multiplier
+        - store
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000000000000080000001500000000000000160000001b0000002e0000002f00000042000000470000004c00000050000000540000005c000000
+        paramByteDataSize: 0000000000000000080000000d000000010000000000000005000000130000000100000013000000050000000500000004000000040000000800000001000000
+    - name: Climb Test
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 435
+        y: 252
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Ground
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: CLIMB
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: Climb
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00014a756d7020427574746f6e2052656c6561736564434c494d4246494e495348454401
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000160000001b00000023000000
+        paramByteDataSize: 16000000050000000800000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: CLIMB
+      isSystemEvent: 0
+      isGlobal: 1
     - name: CROUCH
       isSystemEvent: 0
       isGlobal: 0
     - name: LADDER_TOP
       isSystemEvent: 0
       isGlobal: 0
-    - name: ONCLIMB
+    - name: LAND
       isSystemEvent: 0
       isGlobal: 0
     - name: PHOTOGRAPH
@@ -5372,6 +5593,12 @@ MonoBehaviour:
         value: 1
       - useVariable: 1
         name: Jump
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Jump Vector
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -5413,7 +5640,19 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Is Grounded
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Jump Button Released
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables: []
       vector3Variables:
@@ -5448,6 +5687,12 @@ MonoBehaviour:
         networkSync: 0
         value: {x: 0, y: 0, z: 0}
       - useVariable: 1
+        name: Player's Rotation
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      - useVariable: 1
         name: Relative Move
         tooltip: 
         showInInspector: 0
@@ -5464,11 +5709,17 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 1, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
       gameObjectVariables:
+      - useVariable: 1
+        name: Climbable Object
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       - useVariable: 1
         name: Ladder Bottom
         tooltip: 
@@ -5505,7 +5756,7 @@ MonoBehaviour:
     version: 0
     ExposedEvents: []
     RestartOnEnable: 1
-    EnableDebugFlow: 0
+    EnableDebugFlow: 1
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
@@ -6576,8 +6827,8 @@ CharacterController:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100126}
   serializedVersion: 2
-  m_Height: 1.5
-  m_Radius: .109999999
+  m_Height: 1.60000002
+  m_Radius: .600000024
   m_SlopeLimit: 45
   m_StepOffset: .0599999987
   m_SkinWidth: .00999999978

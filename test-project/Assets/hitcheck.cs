@@ -7,7 +7,12 @@ public class hitcheck : MonoBehaviour
 	{
 		Debug.Log("OnTriggerEnter with" + other);
 	}
-
+	
+	void OnTriggerExit(Collider other)
+	{
+		Debug.Log("OnTriggerExit from" + other);
+	}
+	
 	void OnCollisionEnter(Collision other)
 	{
 		Debug.Log("OnCollisionEnter with" + other);
